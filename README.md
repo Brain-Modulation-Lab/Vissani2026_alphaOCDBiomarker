@@ -30,8 +30,8 @@ I = sum(w_i * d_i^2) / sum(w_i)
 ```
 
 where:
-- w_i = power at contact i
-- d_i = distance from weighted centroid
+- $w_i$ = power at contact i
+- $d_i$ = distance from weighted centroid
 
 The denominator ensures that has units of mm2 and enables scale-invariant comparison across power definitions (e.g., absolute, and periodic alpha power). Moreover, the square root of can be used to define the radius of gyration, representing the effective radius of an equivalent sphere that has the same moment of inertia as the observed spatial distribution.
 
