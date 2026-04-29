@@ -25,7 +25,9 @@ The minimum dataset `Vissani2026_alphaOCDBiomarker/demos` to run `ShowSpectralPa
 * PSEUDO-MONOPOLAR ESTIMATION: the script `ShowMonopolarEstimation.m` is designed to illustrate the computation of the estimation of the pseudo-monopolar contribution of power at each contact from the observation of bipolar signals.
 * SPATIAL ANALYSIS: the script `ShowSpatialAnalysis.m` runs a demo that illustrates the computation of spatial focality in simulated data. The weighted spatial inertia is a concept from physics that quantifies the spread of a mass distribution. In this context, the power value served as the weight, and the inertia was calculated as:
 
+```math
 I = sum(w_i * d_i^2) / sum(w_i)
+```
 
 where:
 - w_i = power at contact i
