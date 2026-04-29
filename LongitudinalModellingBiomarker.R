@@ -16,17 +16,63 @@ library(sjPlot)
 library(emmeans)
 library(broom.mixed)
 
-ROOT_NEXUS  <- "/Volumes/Nexus4"
-PATH_OCD     <- file.path(ROOT_NEXUS, "OCD")
-PATH_PROJECT <- file.path(ROOT_NEXUS, "your_folderpath")
-PATH_SCRIPTS <- file.path(PATH_PROJECT, "your_script_path")
+# -------------------------------------------------------------------------
+# ROOT (edit this based on your system)
+# -------------------------------------------------------------------------
 
-PATH_RESULTS <- file.path(PATH_PROJECT,"Results")
-PATH_CLINICAL         <- file.path(PATH_RESULTS, "output/clinical")
+ROOT_NEXUS <- "/Volumes/Nexus4"
+
+# -------------------------------------------------------------------------
+# PROJECT CONFIGURATION
+# -------------------------------------------------------------------------
+
+PROJECT_NAME <- "your_project_name"
+SCRIPTS_FOLDER <- "scripts"
+
+# -------------------------------------------------------------------------
+# BASE PATHS
+# -------------------------------------------------------------------------
+
+PATH_OCD     <- file.path(ROOT_NEXUS, "OCD")
+PATH_PROJECT <- file.path(ROOT_NEXUS, PROJECT_NAME)
+PATH_SCRIPTS <- file.path(PATH_PROJECT, SCRIPTS_FOLDER)
+
+# -------------------------------------------------------------------------
+# RESULTS STRUCTURE
+# -------------------------------------------------------------------------
+
+PATH_RESULTS <- file.path(PATH_PROJECT, "Results")
+
+PATH_CLINICAL         <- file.path(PATH_RESULTS, "output", "clinical")
 PATH_FIGURES          <- file.path(PATH_RESULTS, "figures")
-PATH_BRAINSENSESURVEY <- file.path(PATH_RESULTS, "output/brainsensesurvey")
-PATH_THERAPYHISTORY   <- file.path(PATH_OCD, "groupanalyses/therapy_history")
-PATH_OUTPUT <- file.path(PATH_FIGURES, "brainsensesurvey","all","Rstats")
+PATH_BRAINSENSESURVEY <- file.path(PATH_RESULTS, "output", "brainsensesurvey")
+
+# Shared resource
+PATH_THERAPYHISTORY <- file.path(PATH_OCD, "groupanalyses", "therapy_history")
+
+# Final output folder
+PATH_OUTPUT <- file.path(
+  PATH_FIGURES,
+  "brainsensesurvey",
+  "all",
+  "Rstats"
+)
+
+# -------------------------------------------------------------------------
+# OPTIONAL: create folders if missing
+# -------------------------------------------------------------------------
+
+paths_to_create <- c(
+  PATH_RESULTS,
+  PATH_CLINICAL,
+  PATH_FIGURES,
+  PATH_BRAINSENSESURVEY,
+  PATH_OUTPUT
+)
+
+invisible(lapply(paths_to_create, function(p) {
+  if (!dir.exists(p)) dir.create(p, recursive = TRUE)
+}))
 
 # set working directory
 
