@@ -25,6 +25,7 @@ The minimum dataset `Vissani2026_alphaOCDBiomarker/demos` to run `ShowSpectralPa
 * PSEUDO-MONOPOLAR ESTIMATION: the script `ShowMonopolarEstimation.m` is designed to illustrate the computation of the estimation of the pseudo-monopolar contribution of power at each contact from the observation of bipolar signals.
 * SPATIAL ANALYSIS: the script `ShowSpatialAnalysis.m` runs a demo that illustrates the computation of spatial focality in simulated data. The weighted spatial inertia is a concept from physics that quantifies the spread of a mass distribution. In this context, the power value served as the weight, and the inertia was calculated as:
 
+
 ```math
 I = sum(w_i * d_i^2) / sum(w_i)
 ```
@@ -33,7 +34,10 @@ where:
 - $w_i$ = power at contact i
 - $d_i$ = distance from weighted centroid
 
-The denominator ensures that has units of mm2 and enables scale-invariant comparison across power definitions (e.g., absolute, and periodic alpha power). Moreover, the square root of can be used to define the radius of gyration, representing the effective radius of an equivalent sphere that has the same moment of inertia as the observed spatial distribution.
+The denominator ensures that has units of $mm^2$ and enables scale-invariant comparison across power definitions. Moreover, the square root of can be used to define the radius of gyration, representing the effective radius of an equivalent sphere that has the same moment of inertia as the observed spatial distribution.
+
+## R Analysis
+* The script `LongitudinalModellingBiomarker.R` runs the longitudinal modeling of OCD symptom severity based on electrophysiological features recorded over multiple recording sessions.
 
 If you encounter any problems, please report them as issues in the repository or send an [email](mailto:mvissani@mgh.harvard.edu).
 This repository has been tested successfully in MATLAB versions 2022a and 2023a on MacOS and Windows.
