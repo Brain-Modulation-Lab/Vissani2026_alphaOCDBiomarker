@@ -1,0 +1,9 @@
+# Sample code for: Pallidal alpha activity is an electrophysiological biomarker of symptom severity in obsessive-compulsive disorder
+
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/license/mit)
+
+## Introduction
+This repository contains the code for the preprint [Vissani et al 2026](https://doi.org/10.21203/rs.3.rs-9316385/v1) "Pallidal alpha activity is an electrophysiological biomarker of symptom severity in obsessive-compulsive disorder". The full raw dataset is is available upon request.
+
+Abstract of the paper:
+>Clinical efficacy of deep brain stimulation (DBS) for obsessive–compulsive disorder (OCD) remains limited by the absence of objective neural biomarkers to guide targeting, programming, and longitudinal optimization of therapy. Using sensing-enabled DBS devices, we analyzed intracranial local field potentials recorded longitudinally from thirteen patients with treatment-refractory OCD implanted in the ventral capsule/ventral striatum (VC/VS). We identify the periodic component of alpha-band activity (7–14 Hz) as a robust electrophysiological correlate of OCD symptom severity. At the initial clinical evaluation, periodic alpha power explained inter-individual variance in symptom severity, and within individuals it tracked longitudinal symptom fluctuations during chronic treatment. Spatial mapping localized the source of this periodic alpha activity to the anterior external globus pallidus (GPe), aligning with stimulation contacts selected as therapeutically optimal during clinical monopolar review. Together, these findings identify anterior GPe alpha oscillations as a state-dependent and spatially specific biomarker of OCD severity, with direct implications for electrophysiology-informed DBS programming and the development of adaptive neuromodulation strategies.
