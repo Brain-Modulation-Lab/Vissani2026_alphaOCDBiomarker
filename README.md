@@ -68,7 +68,7 @@ The external folder in the repo contains other libraries:
 >Citation: [INSERT DOI HERE]
 
 ## Full Dataset request
-The full raw dataset is hosted in the [Data Archive BRAIN Initiative](https://dabi.loni.usc.edu/dsi/1U01NS098969) and is available upon request.
+The full raw dataset is available upon request.
 
 ## Funding
 This work was funded by a Michael Jenike Young Investigator Award of the International Obsessive Compulsive Disorder Foundation (IOCDF)
