@@ -26,9 +26,9 @@ The minimum dataset `Vissani2026_alphaOCDBiomarker/demos` to run `ShowSpectralPa
 * SPATIAL ANALYSIS: the script `ShowSpatialAnalysis.m` runs a demo that illustrates the computation of spatial focality in simulated data. The weighted spatial inertia is a concept from physics that quantifies the spread of a mass distribution. In this context, the power value served as the weight, and the inertia was calculated as:
 
 
-```math
-I = sum(w_i * d_i^2) / sum(w_i)
-```
+$$
+I = \frac{\sum w_i d_i^2}{\sum w_i}
+$$
 
 where:
 - $w_i$ = power at contact i
